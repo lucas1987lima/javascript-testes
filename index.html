@@ -13,15 +13,15 @@
     <!-- INICIO DA BODY-->
 
   <div class="container">
-    <h1>ENTRADA NO SISTEMA</h1>
+    <h1>TELA DE LOGIN</h1>
 
     <!-- FORMULARIO-->
-    <form method="post" action="home.html" class="formulario" id="formulario" onsubmit="return validacao(this)">
+    <form method="post" action="home.php" class="formulario" id="formulario" onsubmit="return validacao(this)">
       <table>
         <tbody>
           <tr>
             <td>USUÁRIO:</td>
-            <td><input class="usuario" type="text" id="usuario" name="usuario"></td>
+            <td><input class="usuario" type="text" id="usuario" name="usuario" onkeyup="this.value = this.value.toUpperCase()"></td>
           </tr>
           <tr>
             <td>SENHA:</td>

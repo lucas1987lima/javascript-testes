@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digita e Mostra</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<script language="javascript" src="funcoes/recebeValores.js"></script>
+<body>
+
+
+  <div class="container">
+    <h1>DIGITE ALGUMA COISA</h1>
+    <p>Conforme digita, é preenchido automático</p>
+
+
+          <!-- CHAMA A FUNCAO  onkeyup="recebeTexto() -->
+    DIGITE: <input type="text" name="texto" id="texto" onkeyup="recebeTexto()">
+ 
+    
+      <!-- RECEBENDO TEXTO -->
+      <p>Texto digitado: <span id="textoDigitado"></span> </p>
+
+    <p></p><button class="bt-limpar" onclick="window.location.href='home.html'">VOLTAR</button>
+  </div>
+
+
+</body>
+</html>

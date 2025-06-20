@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #a9aec7;
+}
+.container {
+    text-align: center;
+    background-color: #b5d1f6;
+    padding: 80px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #200d8b;
+}
+p {
+    color: #4c2fa2;
+    font-size: 1.1em;
+}
+.saudacao {
+    font-size: 1.5em;
+    color: #c90e3a;
+    margin-top: 10px;
+}
+
+
+
+/* BOTOES */
+
+.bt-entrar{
+    background-color: #1e7111;
+    color: #F4F0EA;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 15px;
+}
+
+.bt-entrar:hover {
+    background-color: #0d5b88;
+}
+
+.bt-limpar{
+    background-color: #9c1121;
+    color: #F4F0EA;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 15px;
+}
+
+.bt-limpar:hover {
+    background-color: #d99815;
+}
+
+
+
+/* TABELA */
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Unifica as bordas */
+  margin-bottom: 10px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 3px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}

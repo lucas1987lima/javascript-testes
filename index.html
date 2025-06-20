@@ -3,24 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página inicial</title>
-  <link rel="stylesheet" href="style.css">
+  <title>...: LOGIN :...</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+<!-- ARQUIVO COM AS FUNCOES-->
+<script language="javascript" src="funcoes/validacaoCampos.js"></script>
+<script language="javascript" src="funcoes/recebeValores.js"></script>
 <body>
+    <!-- INICIO DA BODY-->
+
   <div class="container">
-    <h1>Boas vindas!</h1>
-    <p>Vamos personalizar sua saudação usando JavaScript!</p>
-    <div class="saudacao" id="mensagemSaudacao">Olá, visitante!</div>
-    <!-- CHAMANDO A FUNCAO MUDA NOME-->
-    <button onclick="mudarNome()">Personalizar Saudação</button>
+    <h1>ENTRADA NO SISTEMA</h1>
+
+    <!-- FORMULARIO-->
+    <form method="post" action="home.html" class="formulario" id="formulario" onsubmit="return validacao(this)">
+      <table>
+        <tbody>
+          <tr>
+            <td>USUÁRIO:</td>
+            <td><input class="usuario" type="text" id="usuario" name="usuario"></td>
+          </tr>
+          <tr>
+            <td>SENHA:</td>
+            <td><input class="senha" type="password" id="senha" name="senha"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="bt-entrar" type="submit" id="bt-entrar" >ENTRAR</button>
+      <button class="bt-limpar" type="reset">LIMPAR DADOS</button>
+
+    </form>
   </div>
-  <script> 
-      //funcao
-    function mudarNome(){
-      // Declaracao de variavel
-        let nome = "LUCAS!"
-        document.getElementById("mensagemSaudacao").textContent = "OLÁ, " + nome
-    }
-  </script>
+
+
+<script>
+  // SALVAR E ENVIAR DADOS PARA OUTRA PÁGINA
+ 
+
+
+</script>
+  
 </body>
 </html>
